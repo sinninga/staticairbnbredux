@@ -1,8 +1,6 @@
-const flatsReducer = (state, action) => {
+export default function(state, action) {
   if (state === undefined) {
     return [];
   }
 
-};
-
-export default flatsReducer
+}
