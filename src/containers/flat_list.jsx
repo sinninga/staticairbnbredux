@@ -11,6 +11,10 @@ class FlatList extends Component {
    }]
  }
 
+  componentWillMount() {
+    //TODO
+  }
+
   render() {
     return (
       <div className="flat-list col-sm-7">
