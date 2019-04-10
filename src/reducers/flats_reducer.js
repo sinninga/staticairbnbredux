@@ -3,4 +3,10 @@ export default function(state, action) {
     return [];
   }
 
+  switch (action.type) {
+    case 'SET_FLATS':
+      return action.payload;
+    default:
+      return state;
+  }
 }
