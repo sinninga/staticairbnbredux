@@ -14,7 +14,7 @@ class Map extends Component {
     if (this.props.selectedFlat) {
       marker = <div
         style={{ width: '20px', height: '20px',
-          backgroundColor: 'red',
+          backgroundColor: 'orange',
           borderRadius: '50%' }}
       lat={this.props.selectedFlat.lat}
       lng={this.props.selectedFlat.lng} />;
