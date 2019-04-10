@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import { connect } from 'react-redux';
 
 class Map extends Component {
   render() {
@@ -9,6 +10,17 @@ class Map extends Component {
 
     let marker = null;
     let center = { lat: 48.856614, lng: 2.352222 };
+
+    if (this.props.selectedFlat) {
+      marker = <div
+        style={{ width: '20px', height: '20px',
+          backgroundColor: 'red',
+          borderRadius: '50%' }}
+      lat={this.props.selectedFlat.lat}
+      lng={this.props.selectedFlat.lng} />;
+      center = { lat: this.props.selectedFlat.lat,
+      lng: this.props.selectedFlat.lng };
+      }
 
     return (
       <div className="col-sm-5" style={style}>
@@ -22,5 +34,9 @@ class Map extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return { selectedFlat: state.selectedFlat };
+}
 
-export default Map;
+export default connect(mapStateToProps)(Map);;
+
