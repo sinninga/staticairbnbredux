@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { setFlats } from '../actions';
 
-import Flat from '../components/flat';
+import Flat from '../containers/flat';
 
 
 class FlatList extends Component {
@@ -21,10 +21,10 @@ class FlatList extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
- return bindActionCreators(
-  { setFlats: setFlats },
-  dispatch
- );
+  return bindActionCreators(
+    { setFlats: setFlats },
+    dispatch
+  );
 }
 
 function mapStateToProps(state) {
