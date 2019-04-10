@@ -2,15 +2,14 @@ body {
   font-family: Helvetica;
 }
 
-
-
 .flat-list {
  display: flex;
  flex-wrap: wrap;
 }
 
 .flat {
- flex: 50% 0 0;
+ flex: 49% 0 0;
+ margin: 3px;
  cursor: pointer;
  border: 6px solid transparent;
 }

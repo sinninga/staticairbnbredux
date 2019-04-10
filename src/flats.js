@@ -54,3 +54,5 @@ const flats = [
     "lng": 2.350774
   }
 ]
+
+export default flats;

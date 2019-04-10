@@ -7,7 +7,6 @@ import Flat from '../components/flat';
 
 
 class FlatList extends Component {
-
   componentWillMount() {
     this.props.setFlats();
   }
