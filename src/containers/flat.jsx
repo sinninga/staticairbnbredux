@@ -14,7 +14,7 @@ class Flat extends Component {
     }
 
     let classes = "flat card";
-    if (this.props.flat === selectedFlat) {
+    if (this.props.flat === this.props.selectedFlat) {
       classes += " selected";
     }
 
