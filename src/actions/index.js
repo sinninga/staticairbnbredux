@@ -1,4 +1,3 @@
-import flats from '../flats';
 export const SET_FLATS = 'SET_FLATS';
 export const SELECT_FLAT = 'SELECT_FLAT';
 
