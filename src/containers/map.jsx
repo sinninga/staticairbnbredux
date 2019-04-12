@@ -23,7 +23,7 @@ class Map extends Component {
       }
 
     return (
-      <div className="col-sm-5" style={style}>
+      <div className="col-xs-5" style={style}>
         <GoogleMapReact
            center={center}
            defaultZoom={15}>

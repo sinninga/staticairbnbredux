@@ -13,7 +13,7 @@ class FlatList extends Component {
 
   render() {
     return (
-      <div className="flat-list col-sm-7">
+      <div className="flat-list col-xs-7">
         {this.props.flats.map((flat) => <Flat key={flat.name} flat={flat} />)}
       </div>
     );
