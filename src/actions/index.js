@@ -1,15 +1,14 @@
 import flats from '../flats';
 
 export function setFlats() {
- return fetch('https://github.com/lewagon/flats-boilerplate/blob/master/flats.json')
-   .then(response => response.json())
-   .then((data) => {
+ const promise = fetch('https://gist.githubusercontent.com/ssaunier/e852740bb8949bc315a0ebd912ef1fe3/raw/363ce18dc77f73e8e0e82e13bda341535fdbda26/flats.json')
+   .then(response => response.json());
     return {
       type: 'SET_FLATS',
-      payload: data
+      payload: promise
     };
-  });
-}
+  }
+
 
 export function selectFlat(flat) {
   return {
